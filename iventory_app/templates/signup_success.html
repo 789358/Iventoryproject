@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Signup Complete{% endblock %}
+
+{% block content %}
+<div class="container text-center py-5">
+    <h3 class="mb-4">登録が完了しました！</h3>
+    <p>ログインページへ進んでください。</p>
+
+    <a href="{% url 'login' %}" class="btn btn-primary btn-lg mt-3">
+        <i class="bi bi-box-arrow-in-right"></i> ログインはこちら
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ホーム{% endblock %}
+
+{% block content %}
+<header class="masthead" style="background-image: url({% static 'assets/home.jpg' %})">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <div class="page-heading">
+        <h1>在庫管理システムへようこそ</h1>
+        <span class="subheading">簡単・シンプル・使いやすい</span>
+    </div>
+</header>
+
+<div class="card mt-4">
+    <p>在庫の確認、追加、更新、削除が簡単に行えます。</p>
+    <div class="home-btn-wrap">
+    <a href="{% url 'item_list' %}" class="home-main-btn">在庫一覧へ</a>
+</div>
+</div>
+{% endblock %}
